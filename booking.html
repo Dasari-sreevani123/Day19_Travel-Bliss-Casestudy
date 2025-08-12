@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Bliss - Booking</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Bliss</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="_contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 style="text-align:center; margin-top: 20px;">Book Your Trip</h2>
+        <form action="_contact.html" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" 
+            placeholder="Enter your name" required>
+
+            <label>Travel Class</label>
+            <input type="radio" name="class" value="Economy" required> Economy
+            <input type="radio" name="class" value="Business"> Business
+            <input type="radio" name="class" value="First Class"> First Class
+
+            <label>Extras</label>
+            <input type="checkbox" name="meal"> Meal
+            <input type="checkbox" name="wifi"> Wi-Fi
+            <input type="checkbox" name="luggage"> Extra Luggage
+
+            <label for="destination">Destination</label>
+            <select id="destination" name="destination" required>
+                <option value="">--Select--</option>
+                <option>Paris</option>
+                <option>London</option>
+                <option>New York</option>
+                <option>Dubai</option>
+            </select>
+
+            <label for="date">Travel Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Travel Bliss. All rights reserved.</p>
+    </footer>
+</body>
+</html>
